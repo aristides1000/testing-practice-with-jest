@@ -1,4 +1,5 @@
-const calculator = require('../src/calculator');
+/* eslint-disable linebreak-style */
+const calculator = require('../src/calculator.js');
 
 describe('my Add', () => {
   it('3 + 3 should be 6', () => {

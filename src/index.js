@@ -1,15 +1,18 @@
+/* eslint-disable linebreak-style */
+/* eslint-disable import/newline-after-import */
+/* eslint-disable no-unused-vars */
 import _ from 'lodash';
 import './style.css';
-const stringLength = require('./stringLength');
-const reverseString = require('./reverseString');
-const calculator = require('./calculator');
-const capitalize = require('./capitalize');
+const stringLength = require('./stringLength.js');
+const reverseString = require('./reverseString.js');
+const calculator = require('./calculator.js');
+const capitalize = require('./capitalize.js');
 
 const myStringLength = document.getElementById('stringLength');
-myStringLength.innerHTML = `${stringLength("Hello")}`;
+myStringLength.innerHTML = `${stringLength('Hello')}`;
 
 const myReverseString = document.getElementById('reverseString');
-myReverseString.innerHTML = `${reverseString("Wait")}`;
+myReverseString.innerHTML = `${reverseString('Wait')}`;
 
 const myAdd = document.getElementById('add');
 myAdd.innerHTML = `${calculator.add(1, 2)}`;

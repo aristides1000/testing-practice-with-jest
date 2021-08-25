@@ -1,4 +1,5 @@
-const reverseString = require('../src/reverseString');
+/* eslint-disable linebreak-style */
+const reverseString = require('../src/reverseString.js');
 
 it('should reverse a string "test 1"', () => {
   expect(reverseString('abc')).toBe('cba');

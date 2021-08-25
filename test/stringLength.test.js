@@ -1,4 +1,5 @@
-const stringLength = require('../src/stringLength');
+/* eslint-disable linebreak-style */
+const stringLength = require('../src/stringLength.js');
 
 it('The string length of "Hello" is 5', () => {
   expect(stringLength('Hello')).toEqual(5);
