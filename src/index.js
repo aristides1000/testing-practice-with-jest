@@ -1,14 +1,27 @@
 import _ from 'lodash';
 import './style.css';
+const stringLength = require('./stringLength');
+const reverseString = require('./reverseString');
+const calculator = require('./calculator');
+const capitalize = require('./capitalize');
 
-function component() {
-  const element = document.createElement('div');
+const myStringLength = document.getElementById('stringLength');
+myStringLength.innerHTML = `${stringLength("Hello")}`;
 
-  // Lodash, now imported by this script
-  element.innerHTML = _.join(['Hello', 'webpack'], ' ');
-  element.classList.add('hello');
+const myReverseString = document.getElementById('reverseString');
+myReverseString.innerHTML = `${reverseString("Wait")}`;
 
-  return element;
-}
+const myAdd = document.getElementById('add');
+myAdd.innerHTML = `${calculator.add(1, 2)}`;
 
-document.body.appendChild(component());
+const mySubtract = document.getElementById('subtract');
+mySubtract.innerHTML = `${calculator.subtract(1, 2)}`;
+
+const myMultiply = document.getElementById('multiply');
+myMultiply.innerHTML = `${calculator.multiply(1, 2)}`;
+
+const myDivide = document.getElementById('divide');
+myDivide.innerHTML = `${calculator.divide(1, 2)}`;
+
+const myCapitalize = document.getElementById('capitalize');
+myCapitalize.innerHTML = `${capitalize('good')}`;
